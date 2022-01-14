@@ -1,4 +1,4 @@
-let apostleBinarySum = (A, B) => {
+let yakunin = (A, B) => {
     if (A.length !== B.length) return
     const C = []
     let mem = 0;
@@ -36,9 +36,9 @@ let apostleBinarySum = (A, B) => {
 A = [1,0,1]
 B = [1,1,1]
 
-console.log(apostleBinarySum(A, B)) // [1,1,0,0]
+console.log(yakunin(A, B)) // [1,1,0,0]
 
 A = [1,1,1,1,1,0,0,0,0,1,1]
 B = [1,1,1,1,0,1,0,1,0,1,0]
 
-console.log(apostleBinarySum(A, B)) // [1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1]
+console.log(yakunin(A, B)) // [1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1]
