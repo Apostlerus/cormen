@@ -26,7 +26,7 @@ console.log(hasDuplicatesSlow(B));
  * Итого O(n)
  */
 function hasDuplicates(list) {
-  return list.length !== new Set(list).size;
+  return list.length !== new Set(list).size; // крутая идея!
 }
 
 console.log(hasDuplicates(A));

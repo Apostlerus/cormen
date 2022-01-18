@@ -8,7 +8,7 @@ for (let i = 0; i < A.length - 1; i++) {
       min = j;
     }
   }
-  [A[min], A[i]] = [A[i], A[min]];
+  [A[min], A[i]] = [A[i], A[min]]; // элегантно, но там все-таки просили 2-ой массив))
 }
 
 console.log(A);
