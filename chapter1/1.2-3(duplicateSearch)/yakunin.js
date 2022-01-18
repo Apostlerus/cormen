@@ -17,6 +17,7 @@ console.log(hasDouble(A)) // true
 console.log(hasDouble(B)) // false
 
 //сложность N вообще)) ладно, попробуем через NlogN, наверное так:
+// Так тут еще и Set.has() имеет сложность O(n), так что вообще n2 в итоге)
 
 
 const hasDoubleNotOptimized = (arr) => {
