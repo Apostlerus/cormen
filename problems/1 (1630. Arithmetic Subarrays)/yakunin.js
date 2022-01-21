@@ -33,3 +33,7 @@ var checkArithmeticSubarrays = function(nums, l, r) {
     }
     return result;
 };
+
+let nums = [4,6,5,9,3,7], l = [0,0,2], r = [2,3,5];
+
+console.log(checkArithmeticSubarrays(nums, l, r));
