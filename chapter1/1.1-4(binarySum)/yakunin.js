@@ -2,7 +2,7 @@ let yakunin = (A, B) => {
     if (A.length !== B.length) return
     const C = []
     let mem = 0;
-    for (let i = A.length - 1; i > 0; i --) {
+    for (let i = A.length - 1; i >= 0; i --) {
         let j = i + 1
         switch (A[i] + B[i]) {
             case 0:
