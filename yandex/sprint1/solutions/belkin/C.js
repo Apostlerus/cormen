@@ -3,16 +3,16 @@
  */
 function matrixNeighbours(matrix, y, x) {
   let res = [];
-  if (matrix[y - 1]) {
+  if (matrix[y - 1] !== undefined) {
     res.push(matrix[y - 1][x]);
   }
-  if (matrix[y + 1]) {
+  if (matrix[y + 1] !== undefined) {
     res.push(matrix[y + 1][x]);
   }
-  if (matrix[y][x - 1]) {
+  if (matrix[y][x - 1] !== undefined) {
     res.push(matrix[y][x - 1]);
   }
-  if (matrix[y][x + 1]) {
+  if (matrix[y][x + 1] !== undefined) {
     res.push(matrix[y][x + 1]);
   }
   return res.sort((a, b) => a - b).join(' ');
