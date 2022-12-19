@@ -1,13 +1,13 @@
 const fs = require('fs');
 const allFileContents = fs.readFileSync('7.input', 'utf-8');
 let t = {};
-let f = [];
+let f = ['root'];
 allFileContents.split(/\r?\n/).forEach(line =>  {
   line = line.split(' ');
   if (line[0] === '$') {
     if (line[1] === 'cd') {
       if (line[2] === '/') {
-        f = [];
+        f = ['root'];
       } else if (line[2] === '..') {
         f.pop();
       } else {
@@ -33,4 +33,13 @@ for (let i = 0; i < nums.length; i++) {
   }
 }
 
-console.log(res);
+console.log(res); // Часть 1
+
+nums.sort((a, b) => b - a);
+let toDelete = nums[0] - 40000000;
+for (let i = nums.length - 1; i > 0; i--) {
+  if (nums[i] >= toDelete) {
+    console.log(nums[i]); // Часть 2
+    break;
+  }
+}
