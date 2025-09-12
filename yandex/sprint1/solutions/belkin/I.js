@@ -21,3 +21,5 @@ process.stdin.on('end', () => {
   process.stdout.write(res + '');
   process.exit();
 });
+
+// Пиздец насколько элегантное это решение. Это прям знать надо:)
