@@ -15,7 +15,7 @@ _reader.on('line', line => {
     } else if (count === 1) {
         X = line;
     } else {
-        K = parseInt(line);
+        K = BigInt(line);
     }
     count++
 });
@@ -23,5 +23,5 @@ _reader.on('line', line => {
 process.stdin.on('end', solve);
 
 function solve() {
-    console.log((parseInt(X.replace(/ /g, '')) + K).toString().split('').join(' '))
+    console.log((BigInt(X.replace(/ /g, '')) + K).toString().split('').join(' '))
 }
